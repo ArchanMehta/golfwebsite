@@ -1,3 +1,4 @@
+// for cursor designing 
 var crsr = document.querySelector("#cursor");
 var blur = document.querySelector("#cursor-blur");
 
@@ -7,6 +8,8 @@ document.addEventListener("mousemove", function (dets) {
   blur.style.left = dets.x - 250 + "px";
   blur.style.top = dets.y - 250 + "px";
 });
+
+// for navbar animation on scroll
 
 var h4all = document.querySelectorAll("#nav h4");
 h4all.forEach(function (elem) {
@@ -36,6 +39,8 @@ gsap.to("#nav", {
   },
 });
 
+// for background video animation while scrolling
+
 gsap.to("#main", {
   backgroundColor: "#000",
   scrollTrigger: {
@@ -47,6 +52,8 @@ gsap.to("#main", {
     scrub: 2,
   },
 });
+
+// for about us section animation on scrolling
 
 gsap.from("#about-us img,#about-us-in", {
   y: 90,
@@ -75,6 +82,9 @@ gsap.from(".card", {
     scrub: 1,
   },
 });
+
+// for colon animation on scrolling
+
 gsap.from("#colon1", {
   y: -70,
   x: -70,
@@ -99,6 +109,9 @@ gsap.from("#colon2", {
     scrub: 4,
   },
 });
+
+// for heading tag animation on scrolling
+
 gsap.from("#page4 h1", {
   y: 50,
   scrollTrigger: {
